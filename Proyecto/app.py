@@ -170,7 +170,7 @@ if data_file is not None:
     if(columns.issubset(df.columns)):
         graficar(df)
         mostrarTam(df)
-        if st.button('Descargar la base de datos limpia'):
+        if st.button('Realizar la limpieza'):
             df = limpieza(df)
             mostrarTam(df,True)
             graficar(df)
